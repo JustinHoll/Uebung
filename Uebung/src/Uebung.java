@@ -3,7 +3,7 @@ public class Uebung {
 
 	public static void main(String[] args) {
 		
-			byte b = 42;
+			/*byte b = 42;
 			short s = 42;
 			int i = 42;
 			long l = 42L;
@@ -19,7 +19,16 @@ public class Uebung {
 			System.out.println(Integer.MIN_VALUE);
 			System.out.println(Integer.MAX_VALUE);
 			System.out.println(Long.MIN_VALUE);
-			System.out.println(Long.MAX_VALUE);
+			System.out.println(Long.MAX_VALUE);*/
+		
+		
+		System.out.println(wahrOderFalsch());
+		
+		
+	}
+	
+	static boolean wahrOderFalsch(){
+		return (4==5 || 5==5);
 	}
 
 }
