@@ -166,7 +166,8 @@ public class Uebung {
 		static int doppelt(int x){
 			return x+x;
 		}
-		static int summeDerQuadrate(int x, int y){
+		static int summeDerQuadrate(int x, int 
+				y){
 			return quadrat (x)+quadrat(y);
 		}
 		static int signum(int i) {
