@@ -47,7 +47,7 @@ public class Uebung {
 
 			System.out.println(17 % 3);
 
-			System.out.println(17/ (1-1));
+			//System.out.println(17/ (1-1));
 			
 			System.out.println(Integer.MAX_VALUE);
 
@@ -151,11 +151,11 @@ public class Uebung {
 		}
 		static void halloZaehler(int i) {
 			System.out.println("hallo "+i);
-			halloZaehler(i+1);
+			//halloZaehler(i+1);
 		}		
 		static void halloNerver() {
 			System.out.println("hallo");
-			halloNerver();
+			//halloNerver();
 		}
 		static void printNumber(int x) {
 			System.out.println(x);
