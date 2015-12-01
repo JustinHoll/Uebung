@@ -7,7 +7,7 @@ public class SelectionSort {
 	public static void main(String[] args) {
 
 		Random rand = new Random();
-		int  n = rand.nextInt(8) + 2;
+		int  n = rand.nextInt(50) + 2;
 		
 		int[] numb = new int[n];
 		
