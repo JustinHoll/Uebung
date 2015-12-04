@@ -1,11 +1,11 @@
-package SelectionSort;
+package BubbleSort;
 
 import java.util.Random;
 
-public class SelectionSort {
+public class BubbleSort {
 
 	public static void main(String[] args) {
-
+		
 		Random rand = new Random();
 		int  n = 100;
 		
@@ -15,36 +15,29 @@ public class SelectionSort {
 			numb[i] = rand.nextInt(40);
 		}
 		
-		
-		
-		int min;
 		int cache;
 		
 		final long timeStart = System.nanoTime(); 
 		
-		for (int i = 0; i < numb.length; i++) {
-			min = i;
-			for (int j = i+1; j < numb.length; j++) {
-				if(numb[j] <= numb[min]){
-					min = j;
+		for (int x = 0; x < numb.length; x++) {
+			for (int y = 0; y < numb.length; y++) {
+				if(y < numb.length-1){
+					if(numb[y] > numb[y+1]){
+						cache = numb[y];
+						numb[y] = numb[y+1];
+						numb[y+1] = cache;
+					}
 				}
 			}
-			cache = numb[min];
-			numb[min] = numb[i];
-			numb[i] = cache;
-			
 		}
 		
 		final long timeEnd = System.nanoTime(); 
         System.out.println("Verlaufszeit der Schleife: " + ((timeEnd - timeStart)/1000) + " µs."); 
 		
 		
-		for (int i : numb) {
-			System.out.print(i + " ");
+		for (int c : numb) {
+			System.out.print(c + " ");
 		}
 	}
-	
-	
-	
 
 }
